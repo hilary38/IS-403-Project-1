@@ -20,6 +20,8 @@ namespace Project_1_IS_403.Controllers
         }
         public ActionResult MissionFAQ(string sMission)
         {
+            string sMiss = sMission;
+
             return View();
         }
     }
