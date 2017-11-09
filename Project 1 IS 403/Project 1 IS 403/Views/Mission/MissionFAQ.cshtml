@@ -93,52 +93,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="row">
     <div class="col-md-8 col-centered">
         <h3>Ask a Question</h3>
@@ -150,7 +104,7 @@
             </p>
             <p>
                 @Html.Label("Question:", new { @class = "sr - only" })
-                @Html.TextBox("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true })
+                @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true })
             </p>
             <p>
                 <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
