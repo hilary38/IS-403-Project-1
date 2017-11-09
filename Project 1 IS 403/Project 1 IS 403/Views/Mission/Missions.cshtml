@@ -5,3 +5,15 @@
 
 <h2>Missions</h2>
 
+
+@using (Html.BeginForm("missionType", "Mission", FormMethod.Post))
+{
+    <fieldset>
+        <h4>Select Mission</h4>
+        <h5>@Html.DropDownList("contentType")</h5>
+    </fieldset>
+
+    <button class="btn btn-sm btn-default" type="submit">Select</button>
+}
+
+
