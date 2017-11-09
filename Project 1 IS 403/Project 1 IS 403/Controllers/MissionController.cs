@@ -22,6 +22,8 @@ namespace Project_1_IS_403.Controllers
         {
             string sMiss = sMission;
 
+            ViewBag.Mission = sMiss;
+
             return View();
         }
     }
