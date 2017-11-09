@@ -8,3 +8,12 @@
 .landingQuoteAuthor {
     font-size: 2.5em;
 }
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.top-buffer {
+    margin-top: 25px;
+}
