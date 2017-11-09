@@ -24,7 +24,7 @@
         <p>Mission Home Address: @Model.missAddress</p>
         <p>Language: @Model.missLanguage</p>
         <p>Climate: @Model.missClimate</p>
-        <p>Dominate Religion: @Model.missDominantReligion</p>
+        <p>Dominant Religion: @Model.missDominantReligion</p>
     </div>
 </div>
 
@@ -75,10 +75,21 @@
 
 <div class="row">
     <div class="col-md-8 col-centered">
+        <h3>Ask a Question</h3>
         @using (Html.BeginForm())
         {
-            @Html.Label("Name:")
-            @Html.TextBox("qName")
+            <p>
+                @Html.Label("Name:", new { @class = "sr - only" })
+                @Html.TextBox("Name", "", new {id = "qName", @class = "form-control", placeholder = "Your Name", required = true })
+            </p>
+            <p>
+                @Html.Label("Question:", new { @class = "sr - only" })
+                @Html.TextBox("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true })
+            </p>
+            <p>
+                <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
+            </p>
+            
         }
     </div>
 </div>
