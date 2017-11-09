@@ -15,5 +15,9 @@
 }
 
 .top-buffer {
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.landingContent {
+    font-size: 2em;
 }

@@ -1,32 +1,64 @@
-﻿@{
-    ViewBag.Title = "Contact Us";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿
+<div class="container">    
+    @using (Html.BeginForm("Sign_in", "Home", FormMethod.Post, new { @class = "form-signin" }))
+    {
+        <div class="row">
+            <h2 class="form-signin-heading">Contact Us</h2>
+            <br />
+        </div>
+            <div class="row">
+                <label for="inputEmail" class="sr-only">Email Address</label>
+                @Html.TextBox("User Name", "", new { type = "userName", id = "inputUserName", @class = "form-control", placeholder = "User Name", required = true, autofocus = true })
+                <br />
+            </div>
+            <div class="row">
+                <label for="inputEmail" class="sr-only">Email Address</label>
+                @Html.TextBox("Email Address", "", new { type = "email", id = "inputEmail", @class = "form-control", placeholder = "Email Address", required = true })
+                <br />
+            </div>
+            <div class="row">
+                <label for="inputPassword" class="sr-only">Password</label>
+                @Html.Password("Password", "", new { type = "password", id = "inputPassword", @class = "form-control", placeholder = "Password", required = true })
+                <br />
+            </div>
+            <div class="row">
+                <fieldset>
+                    <h5>
+                        Request Type<br />
+                        <br />
+                        @Html.DropDownList("contentType")
+                    </h5>
+                </fieldset>
+            </div>
+            <div class="row">
+                <label for="inputContent" class="sr-only">How can we help you?</label>
+                <br />
+                @Html.TextArea("first", "", new { type = "password", id = "inputContent", @class = "form-control contentBox", placeholder = "How can we help you?", required = true })
+                <br />
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
+                    <br />
+                    <p>*We typically get back to you within 2 business days.</p>
+                </div>
+            </div>
+    }
+</div>
+<div class="container">
+    <div class="row">
+        <strong>
+            Mission Insider
+        </strong>
+            <address>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TNRB, Brigham Young University<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provo, UT 84602-3113<br />
 
-<address>
-    TNRB<br />
-    Brigham Young University<br />
-    Provo, UT 84602-3113<br />
-    <abbr title="Phone">P:</abbr>
-    123-456-7890
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="IS403@example.com">IS403@example.com</a><br />
-</address>
-
-@using (Html.BeginForm("Sign_in", "Home", FormMethod.Post, new { @class = "form-signin" }))
-{
-    <h2 class="form-signin-heading">Contact Us</h2>
-    <label for="inputEmail" class="sr-only">Email Address</label>
-    @Html.TextBox("User Name", "", new { type = "userName", id = "inputUserName", @class = "form-control", placeholder = "User Name", required = true, autofocus = true })
-    <label for="inputEmail" class="sr-only">Email Address</label>
-    @Html.TextBox("Email Address", "", new { type = "email", id = "inputEmail", @class = "form-control", placeholder = "Email Address", required = true, autofocus = true })
-    <label for="inputPassword" class="sr-only">Password</label>
-    @Html.Password("Password", "", new { type = "password", id = "inputPassword", @class = "form-control", placeholder = "Password", required = true })
-    <label for="inputContent" class="sr-only">How can we help you?</label>
-    @Html.TextArea("first")
-
-    <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
-}
+            </address>
+            <address>
+                <strong>Support:</strong><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123-456-7890<br />                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="IS403@example.com">missioninsider@example.com</a><br />
+            </address>
+</div>
+</div>
