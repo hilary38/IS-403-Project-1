@@ -22,3 +22,27 @@ body {
 .landingContent {
     font-size: 2em;
 }
+
+/*header*/
+.navbar-inverse {
+    background-color: #295d7b;
+    border-color: #295d7b;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+/*footer*/
+footer {
+    background-color: #295d7b;
+    border-color: #295d7b;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: -5%;
+    padding-top: 1%;
+}
