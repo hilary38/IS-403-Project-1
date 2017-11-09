@@ -73,4 +73,23 @@
     </div>
 </div>
 
+@using (Html.BeginForm("NewQuestion", "Mission", FormMethod.Post, new { @class = "form-signin" }))
+{
+    
+    <div class="row top-buffer">
+        <div class="col-md-8 col-centered">
+            <label for="newQuestion" class="sr-only">Any other questions?</label>
+            <br />
+            @Html.TextArea("first", "", new { type = "text", id = "newQuestion", @class = "form-control contentBox", placeholder = "Any other questions?", required = true })
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-centered">
+            <button class="btn btn-sm btn-default" type="submit">Submit</button>
+            <br />
+        </div>
+    </div>
+}
+
 
