@@ -13,5 +13,9 @@ namespace Project_1_IS_403.Controllers
         {
             return View();
         }
+        public ActionResult MissionFAQ()
+        {
+            return View();
+        }
     }
 }
