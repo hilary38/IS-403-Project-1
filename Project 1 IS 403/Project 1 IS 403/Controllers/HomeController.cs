@@ -15,7 +15,7 @@ namespace Project_1_IS_403.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Our inspiration.";
 
             return View();
         }
