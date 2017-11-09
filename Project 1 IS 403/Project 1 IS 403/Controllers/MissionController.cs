@@ -18,11 +18,20 @@ namespace Project_1_IS_403.Controllers
             ViewBag.contentType = mission;
             return View();
         }
-        public ActionResult MissionFAQ(string sMission)
+        public ActionResult MissionFAQ(string contentType)
         {
-            string sMiss = sMission;
-
-            ViewBag.Mission = sMiss;
+            if (contentType.Equals("0"))
+            {
+                ViewBag.Mission = "Florida Jacksonville Mission";
+            }
+            else if (contentType.Equals("1"))
+            {
+                ViewBag.Mission = "San Antonio Texas Mission";
+            }
+            else if (contentType.Equals("2"))
+            {
+                ViewBag.Mission = "California Oakland/San Francisco Mission";
+            }
 
             return View();
         }
