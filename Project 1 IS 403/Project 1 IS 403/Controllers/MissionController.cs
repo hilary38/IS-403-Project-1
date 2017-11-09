@@ -18,5 +18,9 @@ namespace Project_1_IS_403.Controllers
             ViewBag.contentType = mission;
             return View();
         }
+        public ActionResult MissionFAQ(string sMission)
+        {
+            return View();
+        }
     }
 }
