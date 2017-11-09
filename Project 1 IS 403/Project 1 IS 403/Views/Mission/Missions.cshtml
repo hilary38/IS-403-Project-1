@@ -1,40 +1,18 @@
 ﻿
 @{
     ViewBag.Title = "Missions";
-    string missionChoice = null;
 }
 
 <h2>Missions</h2>
 
 
-@*@using (Html.BeginForm("missionType", "Mission", FormMethod.Get))
+@using (Html.BeginForm("MissionFAQ", "Mission", FormMethod.Get))
 {
     <fieldset>
         <h4>Select Mission</h4>
         <h5>@Html.DropDownList("contentType")</h5>
+        <p><input type="submit" value="Submit" /></p>
     </fieldset>
 }
 
-@{string sDDLValue = Request.Form["contentType"]; }
 
-@Html.ActionLink("Select", "MissionFAQ", "Mission", new { sMission = sDDLValue }, new { @class = "btn btn-sm btn-default" })*@
-
-@*<script>
-    function getSelected()
-    {
-        var e = document.getElementById("ddlViewBy");
-        var mission = e.options[e.selectedIndex].value;
-
-        @missionChoice = mission;
-    }
-</script>
-
-<select>
-    <option value="fjm">Florida Jacksonville Mission</option>
-    <option value="casfm">California Oakland/San Francisco Mission</option>
-    <option value="tsam">Texas San Antonio Mission</option>
-</select>
-
-<a href="~/Views/Mission/MissionFAQ.cshtml"
-
-@Html.ActionLink("Select", "MissionFAQ", "Mission", new { sMission = missionChoice }, new { @class = "btn btn-sm btn-default", @onclick = "getSelected();" })*@
