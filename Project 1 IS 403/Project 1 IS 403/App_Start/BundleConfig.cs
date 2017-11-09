@@ -25,7 +25,11 @@ namespace Project_1_IS_403
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/ourStyles.css"));
+            
+
+
         }
     }
 }

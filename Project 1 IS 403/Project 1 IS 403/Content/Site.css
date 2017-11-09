@@ -22,3 +22,29 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+p{
+    font-size: 26px;
+}
+
+
+h1{
+    font: bold;
+}
+
+h2{
+    font: bold;
+}
+
+h3{
+    font: bold;
+}
+
+h4{
+    font: bold;
+}
+
+h5{
+    font: bold;
+}
