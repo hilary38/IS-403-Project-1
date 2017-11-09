@@ -13,7 +13,7 @@ namespace Project_1_IS_403.Controllers
         {
             return View();
         }
-        public ActionResult MissionFAQ()
+        public ActionResult MissionFAQ(string sMission)
         {
             return View();
         }
