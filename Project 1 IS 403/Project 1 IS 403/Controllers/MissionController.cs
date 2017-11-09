@@ -6,6 +6,17 @@ using System.Web.Mvc;
 
 namespace Project_1_IS_403.Controllers
 {
+    class Mission
+    {
+        public string missName { get; set; }
+        public string missPresident { get; set; }
+        public string missAddress { get; set; }
+        public string missLanguage { get; set; }
+        public string missClimate { get; set; }
+        public string missDominantReligion { get; set; }
+        public string missionImg { get; set; }
+    }
+
     public class MissionController : Controller
     {
         // GET: Mission
