@@ -9,7 +9,7 @@ namespace Project_1_IS_403.Controllers
     public class MissionController : Controller
     {
         // GET: Mission
-        public ActionResult Index()
+        public ActionResult Missions()
         {
             return View();
         }
