@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_1_IS_403.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,19 +7,10 @@ using System.Web.Mvc;
 
 namespace Project_1_IS_403.Controllers
 {
-    class Mission
-    {
-        public string missName { get; set; }
-        public string missPresident { get; set; }
-        public string missAddress { get; set; }
-        public string missLanguage { get; set; }
-        public string missClimate { get; set; }
-        public string missDominantReligion { get; set; }
-        public string missionImg { get; set; }
-    }
 
     public class MissionController : Controller
     {
+        static Mission oMission = new Mission();
         // GET: Mission
         public ActionResult Missions()
         {
@@ -33,18 +25,36 @@ namespace Project_1_IS_403.Controllers
         {
             if (contentType.Equals("0"))
             {
-                ViewBag.Mission = "Florida Jacksonville Mission";
+                oMission.missName = "Florida Jacksonville Mission";
+                oMission.missPresident = "Brother Jackson";
+                oMission.missAddress = "555 Palm Tree Lane, Jacksonville, Florida";
+                oMission.missLanguage = "Portugese";
+                oMission.missClimate = "Hot and muggy!";
+                oMission.missDominantReligion = "They're all athiests.";
+                oMission.missionImg = "C:\\Users\\hilar\\Source\\Repos\\IS-403-Project-1\\Project 1 IS 403\\Project 1 IS 403\\Content\\Images\\Florida Jacksonville Mission.jpg";
             }
             else if (contentType.Equals("1"))
             {
-                ViewBag.Mission = "San Antonio Texas Mission";
+                oMission.missName = "San Antonio Texas Mission";
+                oMission.missPresident = "Brother Antonio";
+                oMission.missAddress = "555 No Tree Lane, San Antonio, Texas";
+                oMission.missLanguage = "Spanish";
+                oMission.missClimate = "Hot and dry!";
+                oMission.missDominantReligion = "They're all athiests.";
+                oMission.missionImg = "C:\\Users\\hilar\\Source\\Repos\\IS-403-Project-1\\Project 1 IS 403\\Project 1 IS 403\\Content\\Images\\san_antonio_texas_mission.png";
             }
             else if (contentType.Equals("2"))
             {
-                ViewBag.Mission = "California Oakland/San Francisco Mission";
+                oMission.missName = "California Oakland/ San Francisco Mission";
+                oMission.missPresident = "Brother Oakland";
+                oMission.missAddress = "555 Palm Tree Lane, San Francisco, California";
+                oMission.missLanguage = "English";
+                oMission.missClimate = "Hot and dryyyyyyyyyy!";
+                oMission.missDominantReligion = "They're all athiests.";
+                oMission.missionImg = "C:\\Users\\hilar\\Source\\Repos\\IS-403-Project-1\\Project 1 IS 403\\Project 1 IS 403\\Content\\Images\\oakland.png";
             }
 
-            return View();
+            return View(oMission);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿
+﻿@model Project_1_IS_403.Models.Mission
+
 @{
     ViewBag.Title = "Mission FAQ";
 }
@@ -21,11 +22,11 @@
 
 <div class="row top-buffer">
     <div class="col-md-8 col-centered">
-        <p>Mission President: </p>
-        <p>Mission Home Address: </p>
-        <p>Language: </p>
-        <p>Climate: </p>
-        <p>Dominate Religion: </p>
+        <p>Mission President: @Model.missPresident </p>
+        <p>Mission Home Address: @Model.missAddress</p>
+        <p>Language: @Model.missLanguage</p>
+        <p>Climate: @Model.missClimate</p>
+        <p>Dominate Religion: @Model.missDominantReligion</p>
     </div>
 </div>
 
