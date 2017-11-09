@@ -15,3 +15,18 @@
 <address>
     <strong>Support:</strong>   <a href="IS403@example.com">IS403@example.com</a><br />
 </address>
+
+@using (Html.BeginForm("Sign_in", "Home", FormMethod.Post, new { @class = "form-signin" }))
+{
+    <h2 class="form-signin-heading">Contact Us</h2>
+    <label for="inputEmail" class="sr-only">Email Address</label>
+    @Html.TextBox("User Name", "", new { type = "userName", id = "inputUserName", @class = "form-control", placeholder = "User Name", required = true, autofocus = true })
+    <label for="inputEmail" class="sr-only">Email Address</label>
+    @Html.TextBox("Email Address", "", new { type = "email", id = "inputEmail", @class = "form-control", placeholder = "Email Address", required = true, autofocus = true })
+    <label for="inputPassword" class="sr-only">Password</label>
+    @Html.Password("Password", "", new { type = "password", id = "inputPassword", @class = "form-control", placeholder = "Password", required = true })
+    <label for="inputContent" class="sr-only">How can we help you?</label>
+    @Html.TextArea("first")
+
+    <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
+}
