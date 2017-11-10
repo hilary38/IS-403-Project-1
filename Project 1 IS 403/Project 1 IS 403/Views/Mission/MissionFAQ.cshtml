@@ -49,7 +49,7 @@
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new {  @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
-                <button onclick="rehide()" class="btn btn-primary">Submit</button>
+                <button onclick="rehide(response1)" class="btn btn-primary">Submit</button>
             }
         </div>
 
@@ -61,6 +61,17 @@
             understand day-to-day missionary activities is to watch <i>The District</i>. These video segments show
             real missionaries, members, and investigators in non-scripted, unrehearsed, actual missionary situations.
         </p>
+        <div>
+            <btn class="btn btn-primary" onclick="showForm(response2);">Respond</btn>
+        </div>
+
+        <div id="response2" class="hidden">
+            @using (Html.BeginForm())
+            {
+                @Html.TextArea("Answer the Question", "", new { @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
+                <button onclick="rehide(response2)" class="btn btn-primary">Submit</button>
+            }
+        </div>
 
         <p class="pBuffer"><strong>How can I best prepare for this mission?</strong></p>
         <p>
@@ -71,6 +82,17 @@
             also become familiar with Preach My Gospel, especially chapters 1 and 3. For additional counsel on your
             preparation, see a recent interview with Brother David L. Beck, Young Men general president.
         </p>
+        <div>
+            <btn class="btn btn-primary" onclick="showForm(response3);">Respond</btn>
+        </div>
+
+        <div id="response3" class="hidden">
+            @using (Html.BeginForm())
+            {
+                @Html.TextArea("Answer the Question", "", new { @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
+                <button onclick="rehide(response3)" class="btn btn-primary">Submit</button>
+            }
+        </div>
 
         <p class="pBuffer"><strong>What will I be doing?</strong></p>
         <p>
@@ -80,6 +102,18 @@
             missionary activities is to watch <i>The District</i>. These video segments show real missionaries, members,
             and investigators in non-scripted, unrehearsed, actual missionary situations.
         </p>
+        <div>
+            <btn class="btn btn-primary" onclick="showForm(response4);">Respond</btn>
+        </div>
+
+        <div id="response4" class="hidden">
+            @using (Html.BeginForm())
+            {
+                @Html.TextArea("Answer the Question", "", new { @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
+                <button onclick="rehide(response4)" class="btn btn-primary">Submit</button>
+            }
+        </div>
+
     </div>
 </div>
 
