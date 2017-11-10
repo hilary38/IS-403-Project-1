@@ -77,3 +77,7 @@ html, body {
 .footerBottom, .wrapPage:after {
     height: 240px;
 }
+
+.missionSymbolImg {
+    width: 35px;
+}
