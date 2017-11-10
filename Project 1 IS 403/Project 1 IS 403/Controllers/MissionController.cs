@@ -21,6 +21,7 @@ namespace Project_1_IS_403.Controllers
             ViewBag.contentType = mission;
             return View();
         }
+
         public ActionResult MissionFAQ(string contentType)
         {
             if (contentType.Equals("0"))
@@ -56,6 +57,12 @@ namespace Project_1_IS_403.Controllers
             }
 
             return View(oMission);
+        }
+
+        public ActionResult replyQuestion()
+        {
+
+            return View();
         }
     }
 }
