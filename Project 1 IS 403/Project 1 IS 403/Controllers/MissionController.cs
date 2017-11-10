@@ -31,7 +31,7 @@ namespace Project_1_IS_403.Controllers
                 oMission.missLanguage = "Portugese";
                 oMission.missClimate = "Hot and muggy!";
                 oMission.missDominantReligion = "Southern Baptist";
-                oMission.missionImg = "C:\\Users\\hilar\\Source\\Repos\\IS-403-Project-1\\Project 1 IS 403\\Project 1 IS 403\\Content\\Images\\Florida Jacksonville Mission.jpg";
+                oMission.missionImg = "~/Content/Images/oakland.png";
                 ViewBag.ImageUrl = "fjm.jpg";
             }
             else if (contentType.Equals("1"))
@@ -53,8 +53,8 @@ namespace Project_1_IS_403.Controllers
                 oMission.missLanguage = "English";
                 oMission.missClimate = "Hot and dryyyyyyyyyy!";
                 oMission.missDominantReligion = "They're all athiests.";
-                oMission.missionImg = "C:\\Users\\hilar\\Source\\Repos\\IS-403-Project-1\\Project 1 IS 403\\Project 1 IS 403\\Content\\Images\\oakland.png";
-                ViewBag.ImageUrl = "oakland.png";
+                oMission.missionImg = "~/Content/Images/oakland.png";
+                ViewBag.ImageUrl = "~/Content/Images/oakland.png";
             }
 
             return View(oMission);
