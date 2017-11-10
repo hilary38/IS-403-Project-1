@@ -55,3 +55,25 @@ footer {
 .form-signin {
     padding-left: 10%;
 }
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapPage {
+    min-height: 100%;
+    margin-bottom: -155px;
+}
+
+.wrapPage:after {
+    content: "";
+    display:block;
+}
+
+.footerBottom, .wrapPage:after {
+    height: 240px;
+}
