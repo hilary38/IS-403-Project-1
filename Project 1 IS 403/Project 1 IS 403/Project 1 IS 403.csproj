@@ -155,6 +155,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\styles.css" />
     <Content Include="Content\Images\fjm.jpg" />
+    <Content Include="Content\Images\icon.png" />
+    <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\missionaries.jpg" />
     <Content Include="Content\Images\oakland.png" />
     <Content Include="Content\Images\san_antonio_texas_mission.png" />
