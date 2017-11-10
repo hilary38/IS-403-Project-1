@@ -16,13 +16,13 @@
     </div>
 
     <div class="row top-buffer bottom-buffer">
-        <div class="col-md-12">
+        <div class="col-md-8 col-centered">
             @using (Html.BeginForm("MissionFAQ", "Mission", FormMethod.Get))
             {
                 <fieldset>
-                    <h4>Select Mission</h4>
-                    <h5>@Html.DropDownList("contentType")</h5>
-                    <p><input type="submit" value="Submit" /></p>
+                    <h3 class="text-center">Select Mission</h3>
+                    <h5 class="text-center">@Html.DropDownList("contentType")</h5>
+                    <p class="text-center"><input type="submit" value="Submit" class="btn btn-primary" /></p>
                 </fieldset>
             }
         </div>

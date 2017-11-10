@@ -56,8 +56,13 @@ footer {
     padding-left: 10%;
 }
 
-.ptagclass{
-    font-size: 26px;
+.ptagclass {
+    font-size: 2em;
+}
+
+.aboutSpace {
+    padding-bottom: 50px;
+    padding-top:20px;
 }
 
 body, html {
@@ -78,7 +83,9 @@ body, html {
 }
 
 .missionSymbolImg {
-    width: 25%;
+    width: 55%;
+    display:block;
+    margin: auto;
 }
 
 .submitBtn {
