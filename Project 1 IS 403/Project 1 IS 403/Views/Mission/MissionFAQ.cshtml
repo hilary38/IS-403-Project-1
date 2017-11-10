@@ -49,6 +49,7 @@
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new {  @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
+                <button onclick="rehide()" class="btn btn-primary">Submit</button>
             }
         </div>
 
@@ -111,6 +112,12 @@
     function showForm(id) {
         $(function () {
             $(id).removeClass('hidden');
+        });
+    }
+
+    function rehide(id) {
+        $(function () {
+            $(id).addClass('hidden');
         });
     }
 </script>
