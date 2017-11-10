@@ -20,11 +20,10 @@
             @using (Html.BeginForm("MissionFAQ", "Mission", FormMethod.Get))
             {
                 <fieldset>
-                    <h3 class="text-center">Select Mission</h3>
-                    <h5 class="text-center">@Html.DropDownList("contentType")</h5>
-                    <p class="text-center"><input type="submit" value="Submit" class="btn btn-primary" /></p>
+                    <h4 class="text-center mission-margin">@Html.DropDownList("contentType")</h4><br />
+                    <p class="text-center mission-margin"><input type="submit" value="Submit" class="btn btn-primary" /></p>
                 </fieldset>
-            }
+            }            
         </div>
     </div>
 </div>

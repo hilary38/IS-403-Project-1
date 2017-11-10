@@ -42,15 +42,16 @@
             able to send any needed items to you, or you can purchase such items in your mission.
         </p>
         <div>
-            @*@Html.ActionLink("Respond To Question", "replyQuestion", "Mission", null, new { @class = "btn btn-primary", @onclick="showForm();"})*@
-            <btn class="btn btn-primary" onclick="showForm();">Respond</btn>
+            <btn class="btn btn-primary" onclick="showForm(response1);">Respond</btn>
         </div>
 
         <div id="response1" class="hidden">
-            <p>WORDS WORDS WORDS</p>
+            @using (Html.BeginForm())
+            {
+                @Html.TextArea("Answer the Question", "", new {  @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
+                <button onclick="rehide()" class="btn btn-primary">Submit</button>
+            }
         </div>
-
-        <p class="responseArea " id="heeyy">HEEEEEYY</p>
 
         <p class="pBuffer"><strong>What is a typical day like?</strong></p>
         <p>
@@ -89,16 +90,16 @@
         {
             <p>
                 @Html.Label("Name:", new { @class = "sr - only" })
-                @Html.TextBox("Name", "", new {id = "qName", @class = "form-control", placeholder = "Your Name", required = true})
+                @Html.TextBox("Name", "", new { id = "qName", @class = "form-control", placeholder = "Your Name", required = true })
             </p>
             <p>
                 @Html.Label("Question:", new { @class = "sr - only" })
-                @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true, @rows = 5 })
+                @Html.TextArea("Question", "", new { id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true, @rows = 5 })
             </p>
             <p>
                 <button class="btn btn-md btn-primary submitBtn2"  type="submit">Submit</button>
             </p>
-            
+
         }
     </div>
 
@@ -108,10 +109,15 @@
 
 
 <script>
-    function showForm() {
+    function showForm(id) {
         $(function () {
-            $('#response1').removeClass('hidden');
+            $(id).removeClass('hidden');
         });
     }
-        
+
+    function rehide(id) {
+        $(function () {
+            $(id).addClass('hidden');
+        });
+    }
 </script>
