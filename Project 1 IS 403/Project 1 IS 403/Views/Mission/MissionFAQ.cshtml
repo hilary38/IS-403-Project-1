@@ -42,14 +42,14 @@
             able to send any needed items to you, or you can purchase such items in your mission.
         </p>
         <div>
-            <btn class="btn btn-primary" onclick="showForm(response1);">Respond</btn>
+            <btn class="btn btn-primary buttonSpace" onclick="showForm(response1);">Respond</btn>
         </div>
 
-        <div id="response1" class="hidden pBuffer">
+        <div id="response1" class="hidden buttonSpace">
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new {  @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
-                <button onclick="rehide(response1)" class="btn btn-primary">Submit</button>
+                <button onclick="rehide(response1)" class="btn btn-primary buttonSpace">Submit</button>
             }
         </div>
 
@@ -62,14 +62,14 @@
             real missionaries, members, and investigators in non-scripted, unrehearsed, actual missionary situations.
         </p>
         <div>
-            <btn class="btn btn-primary" onclick="showForm(response2);">Respond</btn>
+            <btn class="btn btn-primary buttonSpace" onclick="showForm(response2);">Respond</btn>
         </div>
 
-        <div id="response2" class="hidden">
+        <div id="response2" class="hidden buttonSpace">
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new { @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
-                <button onclick="rehide(response2)" class="btn btn-primary">Submit</button>
+                <button onclick="rehide(response2)" class="btn btn-primary buttonSpace">Submit</button>
             }
         </div>
 
@@ -83,14 +83,14 @@
             preparation, see a recent interview with Brother David L. Beck, Young Men general president.
         </p>
         <div>
-            <btn class="btn btn-primary" onclick="showForm(response3);">Respond</btn>
+            <btn class="btn btn-primary buttonSpace" onclick="showForm(response3);">Respond</btn>
         </div>
 
-        <div id="response3" class="hidden">
+        <div id="response3" class="hidden buttonSpace">
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new { @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
-                <button onclick="rehide(response3)" class="btn btn-primary">Submit</button>
+                <button onclick="rehide(response3)" class="btn btn-primary buttonSpace">Submit</button>
             }
         </div>
 
@@ -103,14 +103,14 @@
             and investigators in non-scripted, unrehearsed, actual missionary situations.
         </p>
         <div>
-            <btn class="btn btn-primary" onclick="showForm(response4);">Respond</btn>
+            <btn class="btn btn-primary buttonSpace" onclick="showForm(response4);">Respond</btn>
         </div>
 
-        <div id="response4" class="hidden">
+        <div id="response4" class="hidden buttonSpace">
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new { @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
-                <button onclick="rehide(response4)" class="btn btn-primary">Submit</button>
+                <button onclick="rehide(response4)" class="btn btn-primary buttonSpace">Submit</button>
             }
         </div>
 

@@ -109,6 +109,10 @@ body, html {
     padding-top: 30px;
 }
 
+.buttonSpace {
+    margin-top: 30px;
+}
+
 h3{
     font-size: 2em;
 }
