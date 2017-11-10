@@ -67,3 +67,8 @@ footer {
 .missionSymbolImg {
     width: 25%;
 }
+
+.submitBtn {
+    width: 15% ;
+    margin-left: 20%;
+}
