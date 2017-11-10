@@ -87,6 +87,14 @@ body, html {
 }
 
 .submitBtn {
-    width: 15% ;
+    text-align: center;
+    display: block;
+    margin-right: 50%;
     margin-left: 20%;
+}
+
+.submitBtn2{
+    text-align:center;
+    display: block;
+    margin-left:42%;
 }

@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<div class="row top-buffer">
+<div class="row top-buffer bottom-buffer">
     <div class="col-md-6 col-centered">
         <h3 class="text-center">Ask a Question</h3>
         @using (Html.BeginForm())
@@ -86,7 +86,7 @@
                 @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true})
             </p>
             <p>
-                <button class="btn btn-md btn-primary" style ="width: 15% ; margin-left: 40%;" type="submit">Submit</button>
+                <button class="btn btn-md btn-primary submitBtn2"  type="submit">Submit</button>
             </p>
             
         }
