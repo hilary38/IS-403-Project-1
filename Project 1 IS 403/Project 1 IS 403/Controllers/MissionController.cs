@@ -31,7 +31,7 @@ namespace Project_1_IS_403.Controllers
                 oMission.missLanguage = "Portugese";
                 oMission.missClimate = "Hot and muggy!";
                 oMission.missDominantReligion = "Southern Baptist";
-                oMission.missionImg = "~/Content/Images/oakland.png";
+                oMission.missionImg = "~/Content/Images/fjm.jpg";
                 ViewBag.ImageUrl = "fjm.jpg";
             }
             else if (contentType.Equals("1"))
@@ -42,8 +42,7 @@ namespace Project_1_IS_403.Controllers
                 oMission.missLanguage = "Spanish";
                 oMission.missClimate = "Hot and dry!";
                 oMission.missDominantReligion = "They're all athiests.";
-                oMission.missionImg = "C:\\Users\\hilar\\Source\\Repos\\IS-403-Project-1\\Project 1 IS 403\\Project 1 IS 403\\Content\\Images\\san_antonio_texas_mission.png";
-                ViewBag.ImageUrl = "san_antonio_texas_mission.png";
+                oMission.missionImg = "~/Content/Images/san_antonio_texas_mission.png";
             }
             else if (contentType.Equals("2"))
             {
@@ -54,7 +53,6 @@ namespace Project_1_IS_403.Controllers
                 oMission.missClimate = "Hot and dryyyyyyyyyy!";
                 oMission.missDominantReligion = "They're all athiests.";
                 oMission.missionImg = "~/Content/Images/oakland.png";
-                ViewBag.ImageUrl = "~/Content/Images/oakland.png";
             }
 
             return View(oMission);
