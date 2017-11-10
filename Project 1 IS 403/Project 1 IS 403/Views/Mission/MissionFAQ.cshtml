@@ -17,7 +17,6 @@
     </div>
 </div>
 
-
 <div class="row top-buffer">
     <div class="col-md-8 col-centered">
         <p>Mission President: @Model.missPresident </p>
@@ -30,7 +29,7 @@
 
 <div class="row top-buffer">
     <div class="col-md-4 col-centered">
-        <img src= "~/Content/Images/(@ViewBag.ImageUrl)" alt="Mission Flag" class="img-rounded" width="100%" />
+        <img src=@Url.Content(Model.missionImg) class="img-rounded" />
     </div>
 </div>
 

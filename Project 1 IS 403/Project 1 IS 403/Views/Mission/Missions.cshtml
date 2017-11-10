@@ -8,25 +8,30 @@
     <span class="breadcrumb-item active">Missions</span>
 </nav>
 
-<div class="row">
-    <div class="col-md-12">
-        <h2 class="text-center">Missions</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">Missions</h2>
+        </div>
+    </div>
+
+    <div class="row top-buffer">
+        <div class="col-md-12">
+            @using (Html.BeginForm("MissionFAQ", "Mission", FormMethod.Get))
+            {
+                <fieldset>
+                    <h4>Select Mission</h4>
+                    <h5>@Html.DropDownList("contentType")</h5>
+                    <p><input type="submit" value="Submit" /></p>
+                </fieldset>
+            }
+        </div>
     </div>
 </div>
 
-<div class="row top-buffer">
-    <div class="col-md-12">
-        @using (Html.BeginForm("MissionFAQ", "Mission", FormMethod.Get))
-        {
-            <fieldset>
-                <h4>Select Mission</h4>
-                <h5>@Html.DropDownList("contentType")</h5>
-                <p><input type="submit" value="Submit" /></p>
-            </fieldset>
-        }
-    </div>
+
+<div class="extraSpace">
+
 </div>
-
-
 
 

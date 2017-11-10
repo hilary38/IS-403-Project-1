@@ -60,3 +60,6 @@ footer {
 .ptagclass{
     font-size: 26px;
 }
+.extraSpace{
+    min-height: 230px;
+}
