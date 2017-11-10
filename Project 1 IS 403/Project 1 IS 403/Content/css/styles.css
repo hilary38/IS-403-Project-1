@@ -1,6 +1,6 @@
 ﻿/*#295d7b*/
 body {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .landingQuote {
@@ -103,4 +103,8 @@ body, html {
 
 #contact-submit-btn{
     margin-right: 2%;
+}
+
+.pBuffer {
+    padding-top: 30px;
 }
