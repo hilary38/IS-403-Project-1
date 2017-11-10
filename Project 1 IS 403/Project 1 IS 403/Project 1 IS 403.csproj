@@ -160,7 +160,6 @@
     <Content Include="Content\Images\missionaries.jpg" />
     <Content Include="Content\Images\oakland.png" />
     <Content Include="Content\Images\san_antonio_texas_mission.png" />
-    <Content Include="Content\ourStyles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
