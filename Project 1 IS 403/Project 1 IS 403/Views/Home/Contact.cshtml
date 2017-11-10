@@ -50,10 +50,12 @@
                     </fieldset>
                 </div>
                 <div class="row">
-                    <label for="inputContent" class="sr-only">How can we help you?</label>
-                    <br />
-                    @Html.TextArea("first", "", new { type = "password", id = "inputContent", @class = "form-control contentBox", placeholder = "How can we help you?", required = true, @rows = 10 })
-                    <br />
+                    <div class="col-md-6">
+                        <label for="inputContent" class="sr-only">How can we help you?</label>
+                        <br />
+                        @Html.TextArea("first", "", new { type = "password", id = "inputContent", @class = "form-control contentBox", placeholder = "How can we help you?", required = true, @rows = 10 })
+                        <br />
+                    </div>
                 </div>
                 <div class="row">
                     <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
