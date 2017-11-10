@@ -59,10 +59,5 @@ namespace Project_1_IS_403.Controllers
             return View(oMission);
         }
 
-        public ActionResult replyQuestion()
-        {
-            
-            return View();
-        }
     }
 }

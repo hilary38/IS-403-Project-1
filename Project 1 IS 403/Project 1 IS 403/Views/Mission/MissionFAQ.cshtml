@@ -42,7 +42,12 @@
             able to send any needed items to you, or you can purchase such items in your mission.
         </p>
         <div>
-            @Html.ActionLink("Respond To Question", "replyQuestion", "Mission", null, new { @class = "btn btn-primary"})
+            @*@Html.ActionLink("Respond To Question", "replyQuestion", "Mission", null, new { @class = "btn btn-primary", @onclick="showForm();"})*@
+            <btn class="btn btn-primary" onclick="showForm();">Respond</btn>
+        </div>
+
+        <div id="response1" class="hidden">
+            <p>WORDS WORDS WORDS</p>
         </div>
 
         <p class="pBuffer"><strong>What is a typical day like?</strong></p>
@@ -97,10 +102,11 @@
 </div>
 
     }
-
-    function hideReplyForm()
-    {
-        Document.GetElementByClass("responseArea").hide();
-        Document.GetElementByID("heeyy").style.display = "none";
+<script>
+    function showForm() {
+        $(function () {
+            $('#response1').removeClass('hidden');
+        });
     }
+        
 </script>
