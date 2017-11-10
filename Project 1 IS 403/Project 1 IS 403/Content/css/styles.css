@@ -57,7 +57,7 @@ footer {
 }
 
 .ptagclass {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .aboutSpace {
@@ -107,4 +107,8 @@ body, html {
 
 .pBuffer {
     padding-top: 30px;
+}
+
+h3{
+    font-size: 2em;
 }
