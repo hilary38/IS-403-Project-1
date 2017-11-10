@@ -56,12 +56,25 @@ footer {
     padding-left: 10%;
 }
 
-
 .ptagclass{
     font-size: 26px;
 }
-.extraSpace{
-    min-height: 230px;
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+.footer {
+    height: 140px;
+    margin-top: -40px;
+}
+
+.bottom-buffer {
+    margin-bottom: 50px;
 }
 
 .missionSymbolImg {
