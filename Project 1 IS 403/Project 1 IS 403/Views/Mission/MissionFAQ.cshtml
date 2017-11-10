@@ -45,11 +45,11 @@
             <btn class="btn btn-primary" onclick="showForm(response1);">Respond</btn>
         </div>
 
-        <div id="response1" class="hidden">
+        <div id="response1" class="hidden pBuffer">
             @using (Html.BeginForm())
             {
                 @Html.TextArea("Answer the Question", "", new {  @class = "form-control", placeholder = "Answer the Question", required = true, @rows = 5 })
-                <button onclick="rehide()" class="btn btn-primary">Submit</button>
+                <button onclick="rehide()" class="btn btn-primary pBuffer">Submit</button>
             }
         </div>
 
