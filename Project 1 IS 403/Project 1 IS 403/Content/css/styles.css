@@ -1,6 +1,6 @@
 ﻿/*#295d7b*/
 body {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .landingQuote {
@@ -57,7 +57,7 @@ footer {
 }
 
 .ptagclass {
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .aboutSpace {
@@ -99,4 +99,16 @@ body, html {
     text-align:center;
     display: block;
     margin-left:42%;
+}
+
+#contact-submit-btn{
+    margin-right: 2%;
+}
+
+.pBuffer {
+    padding-top: 30px;
+}
+
+h3{
+    font-size: 2em;
 }
