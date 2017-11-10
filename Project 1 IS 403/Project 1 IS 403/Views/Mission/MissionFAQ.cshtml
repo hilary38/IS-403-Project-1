@@ -30,7 +30,7 @@
 
 <div class="row top-buffer">
     <div class="col-md-4 col-centered">
-        <img src="~/Content/Images/missionaries.jpg" alt="Mission Flag" class="img-rounded" width="100%" />
+        <img src= "~/Content/Images/(@ViewBag.ImageUrl)" alt="Mission Flag" class="img-rounded" width="100%" />
     </div>
 </div>
 
@@ -73,27 +73,7 @@
     </div>
 </div>
 
-@using (Html.BeginForm("NewQuestion", "Mission", FormMethod.Post, new { @class = "form-signin" }))
-{
-    
-    <div class="row top-buffer">
-        <div class="col-md-8 col-centered">
-            <label for="newQuestion" class="sr-only">Any other questions?</label>
-            <br />
-            @Html.TextArea("first", "", new { type = "text", id = "newQuestion", @class = "form-control contentBox", placeholder = "Any other questions?", required = true })
-            <br />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-centered">
-            <button class="btn btn-sm btn-default" type="submit">Submit</button>
-            <br />
-        </div>
-    </div>
-}
-
-
-<div class="row">
+<div class="row top-buffer">
     <div class="col-md-8 col-centered">
         <h3>Ask a Question</h3>
         @using (Html.BeginForm())
