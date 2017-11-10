@@ -76,3 +76,7 @@ body, html {
 .bottom-buffer {
     margin-bottom: 50px;
 }
+
+.missionSymbolImg {
+    width: 25%;
+}
