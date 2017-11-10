@@ -20,7 +20,7 @@
             @using (Html.BeginForm("MissionFAQ", "Mission", FormMethod.Get))
             {
                 <fieldset>
-                    <h4 class="text-center mission-margin">@Html.DropDownList("contentType")</h4><br />
+                    <h4 class="text-center mission-margin">@Html.DropDownList("contentType", null, new { @class = "btn btn-default dropdown-toggle" })</h4><br />
                     <p class="text-center mission-margin"><input type="submit" value="Submit" class="btn btn-primary" /></p>
                 </fieldset>
             }            
