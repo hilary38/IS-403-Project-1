@@ -83,7 +83,7 @@
             </p>
             <p>
                 @Html.Label("Question:", new { @class = "sr - only" })
-                @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true})
+                @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true, @rows = 5 })
             </p>
             <p>
                 <button class="btn btn-md btn-primary submitBtn2"  type="submit">Submit</button>

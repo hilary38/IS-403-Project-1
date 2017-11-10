@@ -93,3 +93,7 @@ body, html {
     display: block;
     margin-left:42%;
 }
+
+#contact-submit-btn{
+    margin-right: 2%;
+}
