@@ -73,20 +73,20 @@
 </div>
 
 <div class="row top-buffer">
-    <div class="col-md-8 col-centered">
-        <h3>Ask a Question</h3>
+    <div class="col-md-6 col-centered">
+        <h3 class="text-center">Ask a Question</h3>
         @using (Html.BeginForm())
         {
             <p>
                 @Html.Label("Name:", new { @class = "sr - only" })
-                @Html.TextBox("Name", "", new {id = "qName", @class = "form-control", placeholder = "Your Name", required = true })
+                @Html.TextBox("Name", "", new {id = "qName", @class = "form-control", placeholder = "Your Name", required = true})
             </p>
             <p>
                 @Html.Label("Question:", new { @class = "sr - only" })
-                @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true })
+                @Html.TextArea("Question", "", new {id = "qQuestion", @class = "form-control", placeholder = "Your Question", required = true})
             </p>
             <p>
-                <button class="btn btn-md btn-primary btn-block" type="submit">Submit</button>
+                <button class="btn btn-md btn-primary" type="submit">Submit</button>
             </p>
             
         }
