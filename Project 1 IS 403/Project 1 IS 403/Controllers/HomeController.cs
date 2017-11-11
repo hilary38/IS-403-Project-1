@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+//Hilar Nelson Jay Drennan Sou Mizobuchi Marriah Sheffield
+//Home controller, methods for the index, about, and contact pages
+
 namespace Project_1_IS_403.Controllers
 {
     public class HomeController : Controller

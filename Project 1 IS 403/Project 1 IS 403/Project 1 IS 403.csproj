@@ -196,7 +196,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Mission\Missions.cshtml" />
     <Content Include="Views\Mission\MissionFAQ.cshtml" />
-    <Content Include="Views\Mission\replyQuestion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

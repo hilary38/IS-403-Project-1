@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+//Controller to handle the mission view, mission FAQ view
+
 namespace Project_1_IS_403.Controllers
 {
 
@@ -14,6 +16,8 @@ namespace Project_1_IS_403.Controllers
         // GET: Mission
         public ActionResult Missions()
         {
+            //Adds missions to the controller for the user to select from
+
             List<SelectListItem> mission = new List<SelectListItem>();
             mission.Add(new SelectListItem { Text = "Florida Jacksonville Mission", Value = "0", Selected = true });
             mission.Add(new SelectListItem { Text = "San Antonio Texas Mission", Value = "1" });
@@ -24,6 +28,8 @@ namespace Project_1_IS_403.Controllers
 
         public ActionResult MissionFAQ(string contentType)
         {
+            //method to pass specific mission details to view depending on the mission. Receives a parameter of mission
+
             if (contentType.Equals("0"))
             {
                 oMission.missName = "Florida Jacksonville Mission";
