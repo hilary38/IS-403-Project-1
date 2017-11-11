@@ -5,9 +5,9 @@
     ViewBag.Title = "Mission FAQ";
 }
 <body onload="hideReplyForm()">
-    <nav onclass="breadcrumb">
-        @Html.ActionLink("Missions", "Missions", "Mission", null, new { @ckass = "breadcrumb-item" })
-        <span class="breadcrumb-item active">@Model.missName</span>
+    <nav class="breadcrumb">
+        @Html.ActionLink("Missions", "Missions", "Mission", null, new { @class = "breadcrumb-item" })
+        <span class="breadcrumb-item active"> / @Model.missName</span>
     </nav>
 
     <div class="row">
