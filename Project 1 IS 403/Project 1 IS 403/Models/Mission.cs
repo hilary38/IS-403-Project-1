@@ -12,7 +12,7 @@ namespace Project_1_IS_403.Models
         [Key]
         [DisplayName("Mission ID")]
         [Required(ErrorMessage ="A mission ID is required")]
-        public int missID { get; set; }
+        public int missId { get; set; }
 
         [DisplayName("Mission Name")]
         [Required(ErrorMessage = "A mission name is required")]

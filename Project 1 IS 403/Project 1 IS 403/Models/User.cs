@@ -12,7 +12,7 @@ namespace Project_1_IS_403.Models
         [Key]
         [DisplayName("User ID")]
         [Required(ErrorMessage = "A user ID is required")]
-        public int userID { get; set; }
+        public int userId { get; set; }
 
         [DisplayName("User email")]
         [EmailAddress]
@@ -25,11 +25,11 @@ namespace Project_1_IS_403.Models
 
         [DisplayName("First Name")]
         [Required(ErrorMessage = "A first name is required")]
-        public string firstName { get; set; }
+        public string userFirstName { get; set; }
 
         [DisplayName("Last Name")]
         [Required(ErrorMessage = "A last name is required")]
-        public string lastName { get; set; }
+        public string userLastName { get; set; }
 
     }
 }

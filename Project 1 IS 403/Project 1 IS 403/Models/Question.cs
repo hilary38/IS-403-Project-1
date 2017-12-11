@@ -12,15 +12,15 @@ namespace Project_1_IS_403.Models
         [Key]
         [DisplayName("Question ID")]
         [Required(ErrorMessage = "A question ID is required")]
-        public int questionID { get; set; }
+        public int questionId { get; set; }
 
         [DisplayName("Mission ID")]
         [Required(ErrorMessage = "A mission ID is required")]
-        public int missID { get; set; }
+        public int missId { get; set; }
 
         [DisplayName("User ID")]
         [Required(ErrorMessage = "A user ID is required")]
-        public int userID { get; set; }
+        public int userId { get; set; }
 
         [DisplayName("Question")]
         [Required(ErrorMessage = "A question is required")]
