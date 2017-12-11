@@ -1,0 +1,2 @@
+C:\Users\hamcm\git\IS-403-Project-1\IS 403 Project 1\obj\Debug\IS 403 Project 1.csprojResolveAssemblyReference.cache
+C:\Users\hamcm\git\IS-403-Project-1\IS 403 Project 1\obj\Debug\IS 403 Project 1.csproj.CoreCompileInputs.cache
