@@ -30,6 +30,5 @@ namespace IS_403_Project_1.Models
         [DisplayName("Last Name")]
         [Required(ErrorMessage = "A last name is required")]
         public string userLastName { get; set; }
-
     }
 }
