@@ -1,17 +1,74 @@
-﻿@{
-    ViewBag.Title = "Contact";
+﻿@*Page showing Mission Insider contact info, and a form which allows users to contact customer service*@
+@{
+    ViewBag.Title = "Contact - ";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="form-signin-heading">Contact Us</h2><br /><br />
+            <div class="contact-info">
+                <p class="ptagclass">
+                    <strong>
+                        Mission Insider
+                    </strong>
+                </p>
+                <p class="ptagclass">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TNRB, Brigham Young University<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provo, UT 84602-3113<br />
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                </p>
+                <p class="ptagclass">
+                    <strong>Support:</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123-456-7890<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="IS403@example.com">missioninsider@example.com</a><br />
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="form-signin-heading">Request Form</h2><br /><br />
+            @using (Html.BeginForm("Contact", "Home", FormMethod.Post, new { @class = "form-signin" }))
+            {
+                <div class="row">
+                    <label for="inputEmail" class="sr-only">Email Address</label>
+                    @Html.TextBox("User Name", "", new { type = "userName", id = "inputUserName", @class = "form-control", placeholder = "User Name", required = true, autofocus = true })
+                    <br />
+                </div>
+                <div class="row">
+                    <label for="inputEmail" class="sr-only">Email Address</label>
+                    @Html.TextBox("Email Address", "", new { type = "email", id = "inputEmail", @class = "form-control", placeholder = "Email Address", required = true })
+                    <br />
+                </div>
+                <div class="row">
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    @Html.Password("Password", "", new { type = "password", id = "inputPassword", @class = "form-control", placeholder = "Password", required = true })
+                    <br />
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <h5>
+                            Request Type<br />
+                            <br />
+                            @Html.DropDownList("contentType")
+                        </h5>
+                    </fieldset>
+                </div>
+                <div class="row">
+                    <label for="inputContent" class="sr-only">How can we help you?</label>
+                    <br />
+                    @Html.TextArea("first", "", new { type = "password", id = "inputContent", @class = "form-control contentBox", placeholder = "How can we help you?", required = true, @rows = 10 })
+                    <br />
+                </div>
+                <div class="row">
+                    <button class="btn btn-md btn-primary btn-block pull-right" id="contact-submit-btn" style="width: 15% ; margin-left: 20%;" type="submit">Submit</button>
+                    <br />
+                </div>
+                <div class="row bottom-buffer">
+                    <div class="pull-right">
+                        <br />
+                        *We typically get back to you within 2 business days.
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
