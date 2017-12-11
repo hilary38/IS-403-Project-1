@@ -15,15 +15,18 @@ namespace IS_403_Project_1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
+            List<SelectListItem> type = new List<SelectListItem>();
+            type.Add(new SelectListItem { Text = "GENERAL QUESTION", Value = "0", Selected = true });
+            type.Add(new SelectListItem { Text = "REQUEST A PAGE FOR A MISSION", Value = "1" });
+            type.Add(new SelectListItem { Text = "SUGGESTION", Value = "2" });
+            type.Add(new SelectListItem { Text = "REPORT A ISSUE", Value = "3" });
+            ViewBag.contentType = type;
             return View();
         }
     }
