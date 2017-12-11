@@ -18,13 +18,32 @@ namespace Project_1_IS_403.Models
         [Required(ErrorMessage = "A mission name is required")]
         public string missName { get; set; }
 
-        [DisplayName("Mission President")]
-        [Required(ErrorMessage = "A mission president is required")]
-        public string missPresident { get; set; }
+        [DisplayName("Mission President First Name")]
+        [Required(ErrorMessage = "A mission president first name is required")]
+        public string missPresidentFirstName { get; set; }
+
+        [DisplayName("Mission President Last Name)]
+        [Required(ErrorMessage = "A mission president first name is required")]
+        public string missPresidentLastName { get; set; }
 
         [DisplayName("Mission Address")]
-        [Required(ErrorMessage = "A mission ID is required")]
-        public string missAddress { get; set; }
+        [Required(ErrorMessage = "A mission address is required")]
+        public string missAddressLine1 { get; set; }
+
+        [DisplayName("Mission Address")]
+        public string missAddressLine{ get; set; }
+
+        [DisplayName("Mission Zip")]
+        [Required(ErrorMessage = "A mission address is required")]
+        public string missZip { get; set; }
+
+        [DisplayName("Mission Address")]
+        [Required(ErrorMessage = "A mission address is required")]
+        public string missCity { get; set; }
+
+        [DisplayName("Mission Address")]
+        [Required(ErrorMessage = "A mission address is required")]
+        public string missState { get; set; }
 
         [DisplayName("Mission Language")]
         [Required(ErrorMessage = "A mission language is required")]
