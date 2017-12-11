@@ -22,7 +22,7 @@ namespace Project_1_IS_403.Models
         [Required(ErrorMessage = "A mission president first name is required")]
         public string missPresidentFirstName { get; set; }
 
-        [DisplayName("Mission President Last Name)]
+        [DisplayName("Mission President Last Name")]
         [Required(ErrorMessage = "A mission president first name is required")]
         public string missPresidentLastName { get; set; }
 
@@ -31,7 +31,7 @@ namespace Project_1_IS_403.Models
         public string missAddressLine1 { get; set; }
 
         [DisplayName("Mission Address")]
-        public string missAddressLine{ get; set; }
+        public string missAddressLine2 { get; set; }
 
         [DisplayName("Mission Zip")]
         [Required(ErrorMessage = "A mission address is required")]

@@ -15,6 +15,7 @@ namespace Project_1_IS_403.Models
         public int userID { get; set; }
 
         [DisplayName("User email")]
+        [EmailAddress]
         [Required(ErrorMessage = "A user email is required")]
         public string userEmail { get; set; }
 
