@@ -10,5 +10,6 @@ namespace Project_1_IS_403.DAL
 {
     public class MissionContext : dbContext
     {
+
     }
 }
